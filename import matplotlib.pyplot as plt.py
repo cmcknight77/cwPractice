@@ -11,7 +11,7 @@ ax1 = ax.twinx()
 ax1.plot(input_values, cubes, 'ro--', label="Cubes")
 ax1.set_yticks(range(25,126,25))
 
-ax.legend()
-ax1.legend()
+leg = ax.legend()
+
 
 plt.show()
