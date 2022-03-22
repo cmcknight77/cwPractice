@@ -4,14 +4,14 @@ squares = [1, 4, 9, 16, 25]
 cubes = [1, 8, 27, 64, 125]
 
 fig, ax = plt.subplots()
-ax.plot(input_values, squares, 'mD:', label="Squares")
+ax.plot(input_values, squares, 'mD:', label="Deaths")
 ax.set_yticks(range(5,26,5))
 
 ax1 = ax.twinx()
-ax1.plot(input_values, cubes, 'ro--', label="Cubes")
+ax1.plot(input_values, cubes, 'ro--', label="Vaccines")
 ax1.set_yticks(range(25,126,25))
 
-leg = ax.legend()
-
+leg = ax.legend(loc='upper left')
+leg1 = ax1.legend(loc='center left')
 
 plt.show()
